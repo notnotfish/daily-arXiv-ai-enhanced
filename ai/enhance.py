@@ -56,7 +56,7 @@ def process_single_item(chain, item: Dict, language: str) -> Dict:
         # except Exception as e:
         #     print(f"Sensitive check error: {e}", file=sys.stderr)
         #     return True
-        return True
+        return False
 
     # 检查 summary 字段
     if is_sensitive(item.get("summary", "")):
